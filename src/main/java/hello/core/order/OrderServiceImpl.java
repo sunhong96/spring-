@@ -40,4 +40,8 @@ public class OrderServiceImpl implements OrderService{
         return new Order(memberId, itemName, itemPrice, discountPrice);
     } //단일체계 원칙을 잘지켜 설계됨
 
+    //테스트 용도
+    public MemberRepository getMemberRepository() {
+        return memberRepository;
+    }
 }
