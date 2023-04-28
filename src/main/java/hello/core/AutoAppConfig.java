@@ -24,12 +24,12 @@ import org.springframework.context.annotation.FilterType;
         //스캔 대상에서 제외하지는 않지만, 기존 예제 코드를 최대한 남기고 유지하기 위해서 이 방법을 선택했다.
 )
 public class AutoAppConfig {
-    @Bean(name = "memoryMemberRepository")
-    public MemberRepository memberRepository() {
-        return new MemoryMemberRepository();
-    }
-    //같은 이름의 빈이 있을때
-    //이 경우 수동 빈 등록이 우선권을 가진다.
-    //수동 빈이 자동 빈을 오버라이딩 해버린다.
-    //스프링 부트에서는 오류가 남
+//    @Bean(name = "memoryMemberRepository")
+//    public MemberRepository memberRepository() {
+//        return new MemoryMemberRepository();
+//    }
+//    //같은 이름의 빈이 있을때
+//    //이 경우 수동 빈 등록이 우선권을 가진다.
+//    //수동 빈이 자동 빈을 오버라이딩 해버린다.
+//    //스프링 부트에서는 오류가 남
 }
