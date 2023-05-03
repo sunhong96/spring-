@@ -22,7 +22,7 @@ public class OrderServiceImpl implements OrderService{
 //    // 어쨋든 코드를 변경해줘야 되기 떄문에 OCP 위반임
 //
 //    //OCP 원칙은 소프트웨어 요소(클래스, 모듈, 함수 등)는 확장에는 열려 있어야 하고,
-//    // 변경에는 닫혀 있어야 한다는 것을 말합니다.
+//    // 변경에는 닫혀 있어야 한다는 것을 말합니다
 //    // 즉, 기존의 코드를 수정하지 않고도 새로운 기능을 추가할 수 있어야 한다는 것입니다.
     private final DiscountPolicy discountPolicy;
     // 인터페이스에만 의존하도록 설계된 것 이렇게만 해주면 NPE가 발생함
