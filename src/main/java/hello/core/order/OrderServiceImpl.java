@@ -21,7 +21,7 @@ public class OrderServiceImpl implements OrderService{
 //    // 고정할인금액정책을 새로운 10퍼 할인금액정책으로 변경해줌
 //    // 어쨋든 코드를 변경해줘야 되기 떄문에 OCP 위반임
 //
-//    //OCP 원칙은 소프트웨어 요소(클래스, 모듈, 함수 등)는 확장에는 열려 있어야 하고,
+//    //OCP 원칙은 소프트웨어 요소(클래스, 모듈, 함수 등)는 확장에는 열려 있어야 하고
 //    // 변경에는 닫혀 있어야 한다는 것을 말합니다
 //    // 즉, 기존의 코드를 수정하지 않고도 새로운 기능을 추가할 수 있어야 한다는 것입니다.
     private final DiscountPolicy discountPolicy;
