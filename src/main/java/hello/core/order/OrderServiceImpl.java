@@ -27,7 +27,7 @@ public class OrderServiceImpl implements OrderService{
     private final DiscountPolicy discountPolicy;
     // 인터페이스에만 의존하도록 설계된 것 이렇게만 해주면 NPE가 발생함
     // 이 문제를 해결하려면 누군가가 클라이언트인 OrderServiceImpl 에 DiscountPolicy 의 구현 객체를
-    // 대신 생성하고 주입해주어야 한다.
+    // 대신 생성하고 주입해주어야 한다
 
 //    @Autowired
 //    public void setMemberRepository(MemberRepository memberRepository) {
