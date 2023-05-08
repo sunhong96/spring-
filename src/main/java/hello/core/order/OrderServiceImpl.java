@@ -17,7 +17,7 @@ public class OrderServiceImpl implements OrderService{
     private final MemberRepository memberRepository; //= new MemoryMemberRepository();
 ////    private final DiscountPolicy discountPolicy = new FixdiscountPolicy(); //고정할인금액정책
 
-//    private final DiscountPolicy discountPolicy = new RateDiscountPolicy()
+//    private final DiscountPolicy discountPolicy = new RateDiscountPolicy();
 //    // 고정할인금액정책을 새로운 10퍼 할인금액정책으로 변경해줌
 //    // 어쨋든 코드를 변경해줘야 되기 떄문에 OCP 위반임
 //
