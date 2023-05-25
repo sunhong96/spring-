@@ -22,7 +22,7 @@ public class AppConfig {
     //이 메서드를 호출하면 new MemoryMemberRepository() 를 호출한다.
     //orderService 빈을 만드는 코드도 동일하게 memberRepository() 를 호출한다.
     //이 메서드를 호출하면 new MemoryMemberRepository() 를 호출한다.
-    //결과적으로 각각 다른 2개의 MemoryMemberRepository 가 생성되면서 싱글톤이 깨지는 것 처럼 보인다.
+    //결과적으로 각각 다른 2개의 MemoryMemberRepository 가 생성되면서 싱글톤이 깨지는 것 처럼 보인다
 
     //call AppConfig.memberService
     //call AppConfig.memberRepository
