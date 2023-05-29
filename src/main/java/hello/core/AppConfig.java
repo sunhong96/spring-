@@ -42,7 +42,7 @@ public class AppConfig {
     @Bean
     public MemberService memberService() {
         System.out.println("call AppConfig.memberService");
-        return new MemberServiceImpl(memberRepository()); //생성자를 통해서 구현체에 뭐가들어갈지 주입해줌
+        return new MemberServiceImpl(memberRepository()); //생성자를 통해서 구현체에 뭐가들어갈지 주입해줌.
     }
 
     @Bean // (name = "mmm") mmm 으로 이름을 바꿔줄수있음
