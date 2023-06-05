@@ -16,7 +16,7 @@ public class MemberServiceImpl implements MemberService{
 
     @Autowired //AutoAppConfig 에서는 의존관계주입 코드구문이 없다
     // @Autowired 이걸 생성자에 붙여주면 MemberRepository 타입에 맞는걸 찾아와서 의존관계 주입을 자동으로 해줌
-    // 대충 ac.getBean(MemberRepository.class) 라고 동작한다고 생각하면 됨
+    // 대충 ac.getBean(MemberRepository.class) 라고 동작한다고 생각하면 됨.
     public MemberServiceImpl(MemberRepository memberRepository) {
         this.memberRepository = memberRepository; // 생성자로 주입시켜줌 AppConfig 에서
     }
