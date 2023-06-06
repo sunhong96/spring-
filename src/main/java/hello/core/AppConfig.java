@@ -45,7 +45,7 @@ public class AppConfig {
         return new MemberServiceImpl(memberRepository()); //생성자를 통해서 구현체에 뭐가들어갈지 주입해줌
     }
 
-    @Bean // (name = "mmm") mmm 으로 이름을 바꿔줄수있음
+    @Bean // (name = "mmm") mmm 으로 이름을 바꿔줄수있음.
     public MemberRepository memberRepository() {
         System.out.println("call AppConfig.memberRepository");
         return new MemoryMemberRepository();
