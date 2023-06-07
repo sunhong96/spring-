@@ -18,7 +18,7 @@ public class MemberApp {
         //spring 이 AppConfig 안에있는것들을 스프링 컨테이너에다가 넣어서 관리를 해줌
 
         MemberService memberService = applicationContext.getBean("memberService", MemberService.class);
-        //매서드 이름으로 등록 되어있음 (이름 , 타입).
+        //매서드 이름으로 등록 되어있음 (이름 , 타입)..
 
         Member member = new Member(1L, "memberA", Grade.VIP);
         memberService.join(member);
