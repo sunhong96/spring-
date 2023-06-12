@@ -29,7 +29,7 @@ public class AppConfig {
     //call AppConfig.memberRepository
     //call AppConfig.orderService
     //call AppConfig.memberRepository
-    //결과적으로 3번호출하는 것.
+    //결과적으로 3번호출하는 것
 
 
     //call AppConfig.memberService
