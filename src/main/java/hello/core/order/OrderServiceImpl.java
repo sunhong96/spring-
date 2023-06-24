@@ -36,7 +36,7 @@ public class OrderServiceImpl implements OrderService{
 //    @Autowired
 //    public void setDiscountPolicy(DiscountPolicy discountPolicy) {
 //        this.discountPolicy = discountPolicy;
-//    } setter 라 불리는 필드의 값을 변경하는 수정자 메서드를 통해서 의존관계를 주입하는 방법이다.
+//    } setter 라 불리는 필드의 값을 변경하는 수정자 메서드를 통해서 의존관계를 주입하는 방법이다
     //@Autowired 의 기본 동작은 주입할 대상이 없으면 오류가 발생한다. 주입할 대상이 없어도 동작하게
     //하려면 @Autowired(required = false) 로 지정하면 된다.
 
