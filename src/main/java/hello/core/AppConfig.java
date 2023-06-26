@@ -37,7 +37,7 @@ public class AppConfig {
     //call AppConfig.orderService
     //ConfigurationSingletonTest 여기서 실행해보면 이렇게 3번만 호출함
     //자바 코드를 보면 memberRepository 이 3번 호출이 돼야 되는게 맞음
-    //하지만 스프링이 싱글톤을 보장해서 1번만 호출하게해줌
+    //하지만 스프링이 싱글톤을 보장해서 1번만 호출하게해줌,
 
     @Bean
     public MemberService memberService() {
