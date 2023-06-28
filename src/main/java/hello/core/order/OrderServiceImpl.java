@@ -7,10 +7,12 @@ import hello.core.member.Member;
 import hello.core.member.MemberRepository;
 import hello.core.member.MemberService;
 import hello.core.member.MemoryMemberRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
+@RequiredArgsConstructor
 public class OrderServiceImpl implements OrderService{
 
 
@@ -41,11 +43,12 @@ public class OrderServiceImpl implements OrderService{
     //하려면 @Autowired(required = false) 로 지정하면 된다.
 
 
-    @Autowired
-    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
-        this.memberRepository = memberRepository;
-        this.discountPolicy = discountPolicy;
-    } // 생성자로 생성자로 주입시켜줌 AppConfig 에서
+//    @Autowired
+//    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
+//        this.memberRepository = memberRepository;
+//        this.discountPolicy = discountPolicy;
+//    } // 생성자로 생성자로 주입시켜줌 AppConfig 에서
+//    //@RequiredArgsConstructor 이걸쓰면 이생성자를 자동으로만들어줌 롬복에서
 
     @Override
     public Order createOrder(Long memberId, String itemName, int itemPrice) {
